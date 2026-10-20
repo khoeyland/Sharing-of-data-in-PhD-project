@@ -61,3 +61,6 @@ output/
 
 # Office lock files
 ~$*
+
+# Local project memory file for Posit Assistant
+AGENTS.md
