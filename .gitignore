@@ -47,3 +47,17 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Project data (study IDs, screening numbers, examination dates). Not to be shared on GitHub.
+data/raw/
+data/frozen/
+data/clean/
+documentation/*.xlsx
+documentation/*.docx
+documentation/Frame_rate_issue/
+
+# Generated output (may contain study IDs and screening numbers)
+output/
+
+# Office lock files
+~$*
