@@ -1,0 +1,93 @@
+---
+title: "Data_handling_and_reporting_of_hfr_tdi_calibr_cases"
+format: html
+---
+
+# Loading packages
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# Importing relevant libraries for the project. 
+
+source("R/00_load_packages.R")
+
+```
+
+# Taking snapshot of most recent update of Excel files containing raw data (run occasionally)
+
+```{r}
+
+# Taking snapshot of most updated excel file(s). Do this occasionally, after having made input to raw data Excel files 
+
+## Code for freezing data files (do this once in a while)
+source("R/01_freeze_data.R")
+
+# Skipping if today's snapshot already exists (freeze_data() stops in that case). To refresh today's snapshot, delete the folder in data/frozen first.
+if (dir.exists(file.path("data/frozen", Sys.Date()))) {
+  message("Snapshot for ", Sys.Date(), " already exists, skipping freeze_data().")
+} else {
+  freeze_data()
+}
+
+## Loading latest frozen version of the dataset
+source(here::here("R", "02_load_frozen_data.R"))
+
+## Snapshot used for the rest of the document (also used by R/03_import_data.R)
+snapshot_date <- max(list.dirs("data/frozen", recursive = FALSE, full.names = FALSE))
+
+data <- load_frozen(snapshot_date)
+
+```
+
+# Importing data
+
+## Primary data
+
+```{r}
+
+# Importing Excel data file from data/frozen. The Excel files in data/raw folder are the original files that are subject to changes and updates as new data is collected and entered. The Excel files in data/frozen folder are the frozen versions of these datasets, which are created at specific time points to capture the state of the data at that time. The frozen dataset is used for analysis and reporting, while the raw dataset is used for data entry and updates. 
+
+source("R/03_import_data.R")
+
+```
+
+# Data wrangling of available datasets
+
+```{r}
+
+# Running R script in R folder that contains data wrangling steps for the primary raw data. 
+
+source("R/04_data_cleaning.R")
+
+```
+
+# Merging of datasets
+
+```{r}
+
+# Running R script in R folder that contains code for merging of available data frames.
+
+source("R/05_merging_of_data_frames.R")
+
+```
+
+
+# Labelling of variables and values
+
+```{r}
+# Running R script in R folder that contains code for labelling of variables and values:
+
+source("R/06_labelling_of_variables_and_values.R")
+
+```
+
+# Descriptive statistics
+
+```{r}
+
+# Running R script in R folder that contains code for descriptive statistics in the project.
+
+source("R/07_descriptive_statistics.R")
+
+```

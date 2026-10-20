@@ -1,0 +1,116 @@
+variable_name,value,value_label,variable_label,valid_range_format,comment
+id,NA,NA,ID in SAS-fibrosis study at NTNU,NA,NA
+study_group,0,control,study arm,NA,NA
+study_group,1,aortic stenosis,NA,NA,NA
+valve_status,0,native valve,Aortic valve status,NA,NA
+valve_status,1,tavr,NA,NA,NA
+valve_status,2,savr,NA,NA,NA
+acoustic_window,0,"Good acoustic window from all projections (parasternal, apical, +/- subcostal)",Quality of acoustic window in  long term hfr echo study,NA,NA
+acoustic_window,1,Reduced acoustic window in parasternal views,NA,NA,NA
+acoustic_window,2,Reduced acoutisc window in apical views,NA,NA,NA
+acoustic_window,3,Reduced acoustic window in subcostal view,NA,NA,NA
+acoustic_window,4,Reduced acoustic window from both parasternal and apical window (+/- other views),NA,NA,NA
+acoustic_window,5,Severely reduced acoustic window from both parasternal and apical window (+/- other views),NA,NA,NA
+hfr_tdi,0,Performed with good quality,"HFR echo with tdi on 2d b-mode images, at 5 year follow up",NA,NA
+hfr_tdi,1,"Performed with suboptimal quality, or incomplete",NA,NA,NA
+hfr_tdi,2,Not performed,NA,NA,NA
+hfr_tdi_iq,0,Performed with good quality,"HFR echo with tdi-iq on 2d b-mode images, at 5 year follow up",NA,NA
+hfr_tdi_iq,1,"Performed with suboptimal quality, or inclomplete",NA,NA,NA
+hfr_tdi_iq,2,Not performed,NA,NA,NA
+dicom_seq,NA,NA,Dicom sequence number,1 or 2,NA
+file_name,NA,NA,File name for HFR TDI or HFRR TDI-IQ file,NA,NA
+echo_view,NA,NA,Echo view,NA,NA
+image_nr,NA,NA,Sequence number in echo study,NA,NA
+corresponding_hq_image,NA,NA,Sequence number of corresponding High Quality loop,NA,NA
+corresp_clin_echo_image,NA,NA,Sequence number of corresponding clinical echo loop,NA,NA
+data_level,NA,NA,Level of raw data,NA,NA
+ftp_file_name,NA,NA,File name for file exported to GEVU ftp-server,NA,NA
+event,1,Atrial kick (AK),NA,NA,NA
+event,2,Aortic valve closure (AVC),NA,NA,NA
+event,3,Mitral valve closure (MVC),NA,NA,NA
+measurem_n,NA,NA,Measurement number for repeated measurements of shear wave velocity,NA,NA
+manual_vel,NA,NA,"SW velocity, measured manually",NA,NA
+regr_vel,NA,NA,"SW velocity, measured aut. from regression analysis",NA,NA
+regr_r_sq,NA,NA,R square value reported from automated velocity measurement,NA,NA
+sw_qual,NA,NA,Quality of shear wave appearance,NA,NA
+sw_length,NA,NA,Shear wave length (manually entered on visual estimation),NA,NA
+sw_other,1,atrial arrhythmia,NA,NA,NA
+sw_other,2,discuss with colleagues,NA,NA,NA
+sw_other,3,candidate for presentation,NA,NA,NA
+sw_other,4,outlier?,NA,NA,NA
+sw_other,5,File not uploaded to FTP server due to poor SW quality,NA,NA,NA
+sw_other,6,File uploaded to FTP server but not optimal SW quality,NA,NA,NA
+sw_other,7,To be included in plax vs atypical plax comparison study,NA,NA,NA
+vel_group_man,1,< 3 m/s,Low velocity (manual),NA,NA
+vel_group_man,2,3 - 8 m/s,Normal velocity (manual),NA,NA
+vel_group_man,3,> 8 m/s,High velocity (manual),NA,NA
+vel_group_aut,1,< 3 m/s,Low velocity (autom.),NA,NA
+vel_group_aut,2,3 - 8 m/s,Normal velocity (autom.),NA,NA
+vel_group_aut,3,> 8 m/s,High velocity (autom.),NA,NA
+sw_loc_mod,1,echo_nmw_vel_pw_sept_plax,"HFR plane wave imaging, velocity of shear wave (SW) measured in interventricular septum in plax",NA,NA
+sw_loc_mod,2,echo_nmw_vel_dw_sept_plax,"HFR diverging wave imaging, velocity of shear wave measured in interventricular septum in plax",NA,NA
+sw_loc_mod,3,echo_nmw_vel_tdi_sq_sept_plax,"HFR TDI, velocity of shear wave measured in interventricular septum in plax, using ShearQ",NA,NA
+sw_loc_mod,4,echo_nmw_vel_tdi_pymwi_sept_plax,"HFR TDI, velocity of shear wave measured in interventricular septum in plax, using PyMWI",NA,NA
+sw_loc_mod,5,echo_nmw_vel_tdi-iq_sq_sept_plax,"HFR TDI-IQ, velocity of shear wave measured in interventricular septum in plax, using ShearQ",NA,NA
+sw_loc_mod,6,echo_nmw_vel_tdi-iq_pymwi_sept_plax,"HFR TDI-IQ, velocity of shear wave measured in interventricular septum in plax, using PyMWI",NA,NA
+sw_loc_mod,7,echo_nmw_vel_pw_foc_sept_apical,"HFR plane wave imaging, velocity of SW measured in interventricular septum in apical 4 chamber focused on septum, using PYMWI",NA,NA
+sw_loc_mod,8,echo_nmw_vel_dw_foc_sept_apical,"HFR diverging wave imaging, velocity of SW measured in interventricular septum in apical 4 chamber focused on septum, using PYMWI",NA,NA
+sw_loc_mod,9,echo_nmw_vel_tdi_sq_foc_sept_apical,"HFR TDI, velocity of SW measured in interventricular septum in apical 4 chamber focused on septum, using ShearQ",NA,NA
+sw_loc_mod,10,echo_nmw_vel_tdi_pymwi_foc_sept_apical,"HFR TDI, velocity of SW measured in interventricular septum in apical 4 chamber focused on septum, using PyMWI",NA,NA
+sw_loc_mod,11,echo_nmw_vel_tdi_iq_sq_foc_sept_apical,"HFR TDI-IQ, velocity of SW measured in interventricular septum in apical 4 chamber focused on septum, using ShearQ",NA,NA
+sw_loc_mod,12,echo_nmw_vel_tdi-iq_septum_focused_apical,"HFR TDI-IQ, velocity of SW measured in interventricular septum in apical 4 chamber focused on septum, using PyMWI",NA,NA
+sw_loc_mod,13,echo_nmw_vel_pw_a4c_sept,"HFR plane wave imaging, velocity of SW measured in septum in apical 4 chamber, using PYMWI",NA,NA
+sw_loc_mod,14,echo_nmw_vel_dw_a4c_sept,"HFR diverging wave imaging, velocity of SW measured in septum in apical 4 chamber, using PYMWI",NA,NA
+sw_loc_mod,15,echo_nmw_vel_tdi_sq_a4c_sept,"HFR TDI, velocity of SW measured in septum in apical 4 chamber, using ShearQ",NA,NA
+sw_loc_mod,16,echo_nmw_vel_tdi_pymwi_a4c_sept,"HFR TDI, velocity of SW measured in septum in apical 4 chamber, using PYMWI",NA,NA
+sw_loc_mod,17,echo_nmw_vel_tdi_iq_sq_a4c_sept,"HFR TDI-IQ, velocity of SW measured in septum in apical 4 chamber, using ShearQ",NA,NA
+sw_loc_mod,18,echo_nmw_vel_tdi_iq_pymwi_a4c_sept,"HFR TDI-IQ, velocity of SW measured in septum in apical 4 chamber, using PYMWI",NA,NA
+sw_loc_mod,19,echo_nmw_vel_pw_a4c_lat,"HFR plane wave imaging, velocity of SW measured in lateral wall in apical 4 chamber, using PYMWI",NA,NA
+sw_loc_mod,20,echo_nmw_vel_dw_a4c_lat,"HFR diverging wave imaging, velocity of SW measured in lateral wall in apical 4 chamber, using PYMWI",NA,NA
+sw_loc_mod,21,echo_nmw_vel_tdi_sq_a4c_lat,"HFR TDI, velocity of SW measured in lateral wall in apical 4 chamber, using ShearQ",NA,NA
+sw_loc_mod,22,echo_nmw_vel_tdi_pymwi_a4c_lat,"HFR TDI, velocity of SW measured in lateral wall in apical 4 chamber, using PYMWI",NA,NA
+sw_loc_mod,23,echo_nmw_vel_tdi_iq_sq_a4c_lat,"HFR TDI-IQ, velocity of SW measured in lateral wall in apical 4 chamber, using ShearQ",NA,NA
+sw_loc_mod,24,echo_nmw_vel_tdi_iq_pymwi_a4c_lat,"HFR TDI-IQ, velocity of SW measured in lateral wall in apical 4 chamber, using PYMWI",NA,NA
+sw_loc_mod,25,echo_nmw_vel_pw_a2c_inf,"HFR plane wave imaging, velocity of SW measured in inferior wall in apical 2 chamber, using PYMWI",NA,NA
+sw_loc_mod,26,echo_nmw_vel_dw_a2c_inf,"HFR diverging wave imaging, velocity of SW measured in inferior wall in apical 2 chamber, using PYMWI",NA,NA
+sw_loc_mod,27,echo_nmw_vel_tdi_sq_a2c_inf,"HFR TDI, velocity of SW measured in inferior wall in apical 2 chamber, using ShearQ",NA,NA
+sw_loc_mod,28,echo_nmw_vel_tdi_pymwi_a2c_inf,"HFR TDI, velocity of SW measured in inferior wall in apical 2 chamber, using PYMWI",NA,NA
+sw_loc_mod,29,echo_nmw_vel_tdi_iq_sq_a2c_inf,"HFR TDI-IQ, velocity of SW measured in inferior wall in apical 2 chamber, using ShearQ",NA,NA
+sw_loc_mod,30,echo_nmw_vel_tdi_iq_pymwi_a2c_inf,"HFR TDI-IQ, velocity of SW measured in inferior wall in apical 2 chamber, using PYMWI",NA,NA
+sw_loc_mod,31,echo_nmw_vel_pw_a2c_ant,"HFR plane wave imaging, velocity of SW measured in anterior wall in apical 2 chamber, using PYMWI",NA,NA
+sw_loc_mod,32,echo_nmw_vel_dw_a2c_ant,"HFR diverging wave imaging, velocity of SW measured in anterior wall  in apical 2 chamber, using PYMWI",NA,NA
+sw_loc_mod,33,echo_nmw_vel_tdi_sq_a2c_ant,"HFR TDI, velocity of SW measured in anterior wall in apical 2 chamber, using ShearQ",NA,NA
+sw_loc_mod,34,echo_nmw_vel_tdi_pymwi_a2c_ant,"HFR TDI, velocity of SW measured in anterior wall in apical 2 chamber, using PYMWI",NA,NA
+sw_loc_mod,35,echo_nmw_vel_tdi_iq_sq_a2c_ant,"HFR TDI-IQ, velocity of SW measured in anterior wall  in apical 2 chamber, using ShearQ",NA,NA
+sw_loc_mod,36,echo_nmw_vel_tdi_iq_pymwi_a2c_ant,"HFR TDI-IQ, velocity of SW measured in anterior wall  in apical 2 chamber, using PYMWI",NA,NA
+sw_loc_mod,37,echo_nmw_vel_pw_a3c_inflat,"HFR plane wave imaging, velocity of SW measured in inferolateral wall in apical 3 chamber, using PYMWI",NA,NA
+sw_loc_mod,38,echo_nmw_vel_dw_a3c_inflat,"HFR diverging wave imaging, velocity of SW measured in inferolateral wall in apical 3 chamber, using PYMWI",NA,NA
+sw_loc_mod,39,echo_nmw_vel_tdi_sq_a3c_inflat,"HFR TDI, velocity of SW measured in inferolateral wall in apical 3 chamber, using ShearQ",NA,NA
+sw_loc_mod,40,echo_nmw_vel_tdi_pymwi_a3c_inflat,"HFR TDI, velocity of SW measured in inferolateral wall in apical 3 chamber, using PYMWI",NA,NA
+sw_loc_mod,41,echo_nmw_vel_tdi_iq_sq_a3c_inflat,"HFR TDI-IQ, velocity of SW measured in inferolateral wall in apical 3 chamber, using ShearQ",NA,NA
+sw_loc_mod,42,echo_nmw_vel_tdi_iq_pymwi_a3c_inflat,"HFR TDI-IQ, velocity of SW measured in inferolateral wall in apical 3 chamber, using PYMWI",NA,NA
+sw_loc_mod,43,echo_nmw_vel_pw_a3c_antsept,"HFR plane wave imaging, velocity of SW measured in anteroseptal wall in apical 3 chamber, using PYMWI",NA,NA
+sw_loc_mod,44,echo_nmw_vel_dw_a3c_antsept,"HFR diverging wave imaging, velocity of SW measured inanteroseptal wal in apical 3 chamber, using PYMWI",NA,NA
+sw_loc_mod,45,echo_nmw_vel_tdi_sq_a3c_antsept,"HFR TDI, velocity of SW measured in anteroseptal wal in apical 3 chamber, using ShearQ",NA,NA
+sw_loc_mod,46,echo_nmw_vel_tdi_pymwi_a3c_antsept,"HFR TDI, velocity of SW measured in anteroseptal wal in apical 3 chamber, using PYMWI",NA,NA
+sw_loc_mod,47,echo_nmw_vel_tdi_iq_sq_a3c_antsept,"HFR TDI-IQ, velocity of SW measured in anteroseptal wal in apical 3 chamber, using ShearQ",NA,NA
+sw_loc_mod,48,echo_nmw_vel_tdi_iq_pymwi_a3c_antsept,"HFR TDI-IQ, velocity of SW measured in anteroseptal wal in apical 3 chamber, using PYMWI",NA,NA
+sw_loc_mod,49,echo_nmw_vel_pw_atyp_plax_sept,"HFR plane wave imaging, velocity of shear wave (SW) measured in interventricular septum in atypical plax",NA,NA
+sw_loc_mod,50,echo_nmw_vel_dw_atyp_plax_sept,"HFR diverging wave imaging, velocity of shear wave measured in interventricular septum in atypical plax",NA,NA
+sw_loc_mod,51,echo_nmw_vel_tdi_sq_atyp_plax_sept,"HFR TDI, velocity of shear wave measured in interventricular septum in atypical plax, using ShearQ",NA,NA
+sw_loc_mod,52,echo_nmw_vel_tdi_pymwi_atyp_plax_sept,"HFR TDI, velocity of shear wave measured in interventricular septum in atypical plax, using PyMWI",NA,NA
+sw_loc_mod,53,echo_nmw_vel_tdi_iq_sq_atyp_plax_sept,"HFR TDI-IQ, velocity of shear wave measured in interventricular septum in atypical plax, using ShearQ",NA,NA
+sw_loc_mod,54,echo_nmw_vel_tdi_iq_pymwi_atyp_plax_sept,"HFR TDI-IQ, velocity of shear wave measured in interventricular septum in atypical plax, using PyMWI",NA,NA
+sw_loc_mod,55,echo_nmw_vel_pw_sept_atyp_plax,"HFR plane wave imaging, velocity of shear wave (SW) measured in interventricular septum in atypical plax",NA,NA
+sw_loc_mod,56,echo_nmw_vel_dw_sept_atyp_plax,"HFR diverging wave imaging, velocity of shear wave measured in interventricular septum in atypical plax",NA,NA
+sw_loc_mod,57,echo_nmw_vel_tdi_sq_sept_atyp_plax,"HFR TDI, velocity of shear wave measured in interventricular septum in atypical plax, using ShearQ",NA,NA
+sw_loc_mod,58,echo_nmw_vel_tdi_pymwi_sept_atyp_plax,"HFR TDI, velocity of shear wave measured in interventricular septum in atypical plax, using PyMWI",NA,NA
+sw_loc_mod,59,echo_nmw_vel_tdi-iq_sq_sept_atyp_plax,"HFR TDI-IQ, velocity of shear wave measured in interventricular septum in atypical plax, using ShearQ",NA,NA
+sw_loc_mod,60,echo_nmw_vel_tdi-iq_pymwi_sept_atyp_plax,"HFR TDI-IQ, velocity of shear wave measured in interventricular septum in atypical plax, using PyMWI",NA,NA
+case_vel_group,1,Low velocity,"Velocity group, as stored on ftp server","1, 2 or 3",NA
+case_vel_group,2,Normal velocity,NA,NA,NA
+case_vel_group,3,High velocity,NA,NA,NA
+gr_case_nr,NA,NA,Case number given (within velocity group) upon uploading of HFR TDI data to FTP server,NA,"Leabe as ""NA"" if not uploaded, usually because of poor quality"
+cycle_nr,NA,NA,"Cyckle number in ShearQ ""Cycle selection""",NA,There are usually 4 consecutive heart cycles available
+atyp_plax_coll,0,Standard PLAX view,Standard vs atypical PLAX HFR acquisition,NA,NA
+atyp_plax_coll,1,Atypical PLAX view,NA,NA,NA
